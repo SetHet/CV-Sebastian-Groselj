@@ -29,3 +29,45 @@
   grid-template-columns: repeat(auto-fill, 200px);
   justify-content: center;
 }
+
+.image-portrait {
+  border-radius: 48px;
+}
+
+.area-filter {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid gray;
+  margin: 0;
+  span {
+    padding: 4px;
+    border: 1px solid gray;
+    border-top: 0;
+    border-left: 0;
+    border-radius: 0 0 4px 4px;
+    margin: 0;
+    height: 20px;
+    width: 120px;
+    text-align: center;
+    font-size: large;
+
+    &:hover {
+      height: 25px;
+      width: 150px;
+    }
+  }
+}
+
+.container-info {
+  h2 {
+    font-size: xx-large;
+  }
+
+  h3 {
+    font-size: x-large;
+  }
+
+  h4 {
+    font-size: large;
+  }
+}
