@@ -1,8 +1,33 @@
 .container-firstlook {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  border-bottom: 1px solid gray;
+}
+
+.container-portrait {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  justify-content: end;
+
+  .image-portrait {
+    border-radius: 48px;
+    margin-right: 15px;
+  }
+}
+.container-info {
+  padding-left: 15px;
+  * {
+    padding-bottom: 8px;
+  }
 }
 
 .other-socialnetworks {
@@ -30,9 +55,7 @@
   justify-content: center;
 }
 
-.image-portrait {
-  border-radius: 48px;
-}
+
 
 .area-filter {
   display: flex;
@@ -59,16 +82,3 @@
   }
 }
 
-.container-info {
-  h2 {
-    font-size: xx-large;
-  }
-
-  h3 {
-    font-size: x-large;
-  }
-
-  h4 {
-    font-size: large;
-  }
-}
