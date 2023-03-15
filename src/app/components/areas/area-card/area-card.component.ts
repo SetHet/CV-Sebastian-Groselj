@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { AreaKnowledge } from 'src/app/models/areaknowledge.model';
 
 @Component({
   selector: 'app-area-card',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./area-card.component.scss']
 })
 export class AreaCardComponent {
+
+  @Input() areaknowledge!: AreaKnowledge;
 
 }

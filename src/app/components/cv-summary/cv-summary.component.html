@@ -13,16 +13,10 @@
   </div>
 </div>
 <div class="other-socialnetworks">
-  <div>
-    <a href="">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
-        alt="Logo LinkedIn">
-    </a>
-  </div>
-  <div>
-    <a href="">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/GitHub_logo_2013.svg/2560px-GitHub_logo_2013.svg.png"
-        alt="Logo Github">
+  <div *ngFor="let sn of socialNetworks">
+    <a href="{{sn.url}}">
+      <img src="{{sn.imgUrl}}"
+        alt="{{sn.name}}">
     </a>
   </div>
 </div>
@@ -36,34 +30,6 @@
   <span>Otros</span>
 </div>
 <div class="container container-areas">
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-  <app-area-card></app-area-card>
-
-
+  <app-area-card *ngFor="let ak of areasKnowledge" [areaknowledge]="ak"  ></app-area-card>
 </div>
 <div class="contact"></div>
