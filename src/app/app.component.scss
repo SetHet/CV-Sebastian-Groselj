@@ -1,0 +1,18 @@
+.container-root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(177, 255, 249);
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+
+// @media (max-width: 1000px){
+
+// }
