@@ -7,6 +7,7 @@ import { CvSummaryComponent } from './components/cv-summary/cv-summary.component
 import { GuideAngularComponent } from './components/guide-angular/guide-angular.component';
 import { AreaCardComponent } from './components/areas/area-card/area-card.component';
 import { AreaInfoComponent } from './components/areas/area-info/area-info.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AreaInfoComponent } from './components/areas/area-info/area-info.compon
     CvSummaryComponent,
     GuideAngularComponent,
     AreaCardComponent,
-    AreaInfoComponent
+    AreaInfoComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
