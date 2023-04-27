@@ -8,6 +8,8 @@ import { GuideAngularComponent } from './components/guide-angular/guide-angular.
 import { AreaCardComponent } from './components/areas/area-card/area-card.component';
 import { AreaInfoComponent } from './components/areas/area-info/area-info.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ContactComponent } from './components/contact/contact.component';
     GuideAngularComponent,
     AreaCardComponent,
     AreaInfoComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
